@@ -20,6 +20,9 @@ namespace PersonDataManagement
             PersonDataManagement.AgeBetween13to18(listOfPerson);
             //UC4 - Retrive Average age from the list
             PersonDataManagement.AverageAge(listOfPerson);
+            //UC5 - Check Name is present or not
+            //UC5
+            PersonDataManagement.CheckName(listOfPerson, "Yash");
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

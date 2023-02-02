@@ -26,5 +26,18 @@ namespace PersonDataManagement
             var avgAge = list.Average(p => p.Age);
             Console.WriteLine("\nAverage Age is : " + Math.Round(avgAge, 2));
         }
+        public static void CheckName(List<Person> list, string input)
+        {
+            var result = list.Where(p => p.Name == input).ToList();
+
+            if (result.Count > 0)
+            {
+                Console.WriteLine("\nName is Present");
+            }
+            else
+            {
+                Console.WriteLine("\nName is not Present");
+            }
+        }
     }
 }

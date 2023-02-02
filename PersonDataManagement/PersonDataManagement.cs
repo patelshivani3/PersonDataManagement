@@ -45,6 +45,5 @@ namespace PersonDataManagement
             Console.WriteLine("\nSkip records from the list having age less than 60");
             Program.DisplayPersonDetails(result);
         }
-
     }
 }

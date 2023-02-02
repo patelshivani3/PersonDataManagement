@@ -30,6 +30,7 @@ namespace PersonDataManagement
 
             //UC6 - Skip records less than age 60
             PersonDataManagement.SkipAgeLessThan60(listOfPerson);
+
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

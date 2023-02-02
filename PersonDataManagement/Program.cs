@@ -27,8 +27,6 @@ namespace PersonDataManagement
             //UC5 - Check Name is present or not
             PersonDataManagement.CheckName(listOfPerson, "Yash");
 
-            //UC6 - Skip records less than age 60
-            PersonDataManagement.SkipLessThan60(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

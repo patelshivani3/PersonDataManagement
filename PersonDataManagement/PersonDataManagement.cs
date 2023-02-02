@@ -46,5 +46,22 @@ namespace PersonDataManagement
             Console.WriteLine("\nSkip records from the list having age less than 60");
             Program.DisplayPersonDetails(result);
         }
+        public static void RemovePersonName(List<Person> list, string input)
+        {
+
+            var result = list.Where(p => p.Name == input).ToList();
+            //Console.WriteLine("\nRemove Person");
+            if (result.Count > 0)
+            {
+                Console.WriteLine("\nPerson is Found");
+                var removePerson = list.RemoveAll(p => p.Name == input);
+                Program.DisplayPersonDetails(list);
+                Console.WriteLine("Person is Removed");
+            }
+            else
+            {
+                Console.WriteLine("\nContact not found");
+            }
+        }
     }
 }

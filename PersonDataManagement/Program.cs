@@ -18,12 +18,22 @@ namespace PersonDataManagement
             
             //UC2 - Retrive Top 2 record which are Less than 60
             PersonDataManagement.RetrieveTop2LessThan60(listOfPerson);
+
             //UC3 - Retrive Records having Age betwwen 13 to 18
             PersonDataManagement.AgeBetween13to18(listOfPerson);
+            
             //UC4 - Retrive Average age from the list
             PersonDataManagement.AverageAge(listOfPerson);
+            
             //UC5 - Check Name is present or not
             PersonDataManagement.CheckName(listOfPerson, "Yash");
+
+            //UC6 - Skip records less than age 60
+            PersonDataManagement.SkipAgeLessThan60(listOfPerson);
+
+            //UC7 - Remove Person Name
+            PersonDataManagement.RemovePersonName(listOfPerson,"siya");
+
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

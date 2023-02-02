@@ -28,16 +28,23 @@ namespace PersonDataManagement
         }
         public static void CheckName(List<Person> list, string input)
         {
+            Console.WriteLine("\nCheck Name of Person");
             var result = list.Where(p => p.Name == input).ToList();
 
             if (result.Count > 0)
             {
-                Console.WriteLine("\nName is Present");
+                Program.DisplayPersonDetails(result);
             }
             else
             {
                 Console.WriteLine("\nName is not Present");
             }
+        }
+        public static void SkipLessThan60(List<Person> list)
+        {
+            var skipAge = list.SkipWhile(p => p.Age < 60);
+            Console.WriteLine("\nSkip records from the list having age less than 60");
+            Program.DisplayPersonDetails(skipAge);
         }
     }
 }

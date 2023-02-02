@@ -18,6 +18,8 @@ namespace PersonDataManagement
             PersonDataManagement.RetrieveTop2LessThan60(listOfPerson);
             //UC3 - Retrive Records having Age betwwen 13 to 18
             PersonDataManagement.AgeBetween13to18(listOfPerson);
+            //UC4 - Retrive Average age from the list
+            PersonDataManagement.AverageAge(listOfPerson);
             Console.ReadLine();
         }
         public static void AddingPersonDetails(List<Person> list)

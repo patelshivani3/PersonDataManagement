@@ -60,7 +60,7 @@ namespace PersonDataManagement
             }
             else
             {
-                Console.WriteLine("\nContact not found");
+                Console.WriteLine("\nPerson not found");
             }
         }
     }
